@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\(''/Users/mariarachel/Documents/Finding Nami/1_Aligned Life With Maggie/alignedlifewithmaggie-website/assets/Maggie-5.webp''\\); print\\(f''Width: {img.width}, Height: {img.height}''\\)\")",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/mariarachel/Documents/Finding Nami/1_Aligned Life With Maggie/alignedlifewithmaggie-website/assets/Maggie-5.webp\")"
+    ]
+  }
+}

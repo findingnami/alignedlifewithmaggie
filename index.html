@@ -6,8 +6,9 @@
     <title>Aligned Life with Maggie - Life Coaching for Filipina Professionals</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600;700&family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=9">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -19,9 +20,9 @@
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#book">BOOK</a></li>
-                        <li><a href="#testimonials">TESTIMONIALS</a></li>
+                        <li><a href="#about" class="nav-menu">ABOUT</a></li>
+                        <li><a href="#book" class="nav-menu">BOOK</a></li>
+                        <li><a href="#testimonials" class="nav-menu">TESTIMONIALS</a></li>
                         <li><a href="#bookacall" class="btn-nav">BOOK A CALL</a></li>
                     </ul>
                 </nav>
@@ -31,25 +32,23 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-left">
-                    <img src="assets/maggie-4.webp" alt="Hero Image Left" class="hero-image">
-                </div>
-                <div class="hero-center">
-                    <h1 class="hero-heading">JULIA MARGARET</h1>
-                    <h2 class="hero-subheading">Create a life and career that feels aligned with who you truly are.</h2>
-                </div>
-                <div class="hero-right">
-                    <img src="assets/maggie-5.webp" alt="Hero Image Right" class="hero-image">
-                </div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <img src="assets/maggie-4.webp" alt="Hero Image Left" class="hero-image">
+            </div>
+            <div class="hero-center">
+                <h1 class="hero-heading">JULIA<br>MARGARET</h1>
+                <h2 class="hero-subheading">Create a life and career that feels aligned with who you truly are.</h2>
+            </div>
+            <div class="hero-right">
+                <img src="assets/maggie-5.webp" alt="Hero Image Right" class="hero-image">
             </div>
         </div>
     </section>
 
     <!-- Pop-up Hero Section -->
     <section class="popup-hero">
-        <div class="container">
+        <div class="container" id="popup-box">
             <div class="popup-hero-content">
                 <div class="popup-hero-text">
                     <p class="popup-hero-heading">Mindset and life coaching for Filipina professionals ready for their next chapter.</p>
@@ -57,7 +56,7 @@
                     <button class="btn btn-cta" id="bookacall">BOOK A CALL</button>
                 </div>
                 <div class="popup-hero-image">
-                    <img src="assets/iphone-2.webp" alt="FaceTime with Maggie">
+                    <img src="assets/Maggie-6.webp" alt="FaceTime with Maggie">
                 </div>
             </div>
         </div>
@@ -106,19 +105,37 @@
         <div class="container">
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Working with Maggie helped me gain clarity during one of the most confusing periods of my life. I was feeling burnt out at work and constantly questioning my decisions."</p>
-                    <p class="testimonial-author">— ANGELA R.</p>
-                    <p class="testimonial-title">MARKETING PROFESSIONAL</p>
+                    <span class="testimonial-quote">&ldquo;</span>
+                    <p class="testimonial-text">Working with Maggie helped me gain clarity during one of the most confusing periods of my life. I was feeling burnt out at work and constantly questioning my decisions.</p>
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-details">
+                            <p class="testimonial-author">— ANGELA R.</p>
+                            <p class="testimonial-title">MARKETING PROFESSIONAL</p>
+                        </div>
+                        <img src="assets/angela.webp" alt="Angela R." class="testimonial-avatar">
+                    </div>
                 </div>
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Maggie helped me build structure in my life and reconnect with my purpose. Our sessions gave me both direction and emotional support, which I didn't realize I needed so much."</p>
-                    <p class="testimonial-author">— CAMILLE S.</p>
-                    <p class="testimonial-title">GRAPHIC DESIGNER</p>
+                    <span class="testimonial-quote">&ldquo;</span>
+                    <p class="testimonial-text">Maggie helped me build structure in my life and reconnect with my purpose. Our sessions gave me both direction and emotional support, which I didn't realize I needed so much.</p>
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-details">
+                            <p class="testimonial-author">— CAMILLE S.</p>
+                            <p class="testimonial-title">GRAPHIC DESIGNER</p>
+                        </div>
+                        <img src="assets/camille.webp" alt="Camille S." class="testimonial-avatar">
+                    </div>
                 </div>
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"With Maggie's help, I feel more confident now, and for the first time in a long time, I feel like I'm in control of my life again."</p>
-                    <p class="testimonial-author">— SARAH A.</p>
-                    <p class="testimonial-title">ENGLISH TEACHER</p>
+                    <span class="testimonial-quote">&ldquo;</span>
+                    <p class="testimonial-text">With Maggie's help, I feel more confident now, and for the first time in a long time, I feel like I'm in control of my life again.</p>
+                    <div class="testimonial-author-info">
+                        <div class="testimonial-details">
+                            <p class="testimonial-author">— SARAH A.</p>
+                            <p class="testimonial-title">ENGLISH TEACHER</p>
+                        </div>
+                        <img src="assets/sarah.webp" alt="Sarah A." class="testimonial-avatar">
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,7 +144,12 @@
     <!-- FAQs Section -->
     <section class="faqs-section">
         <div class="container">
-            <h1 class="faqs-heading">Frequently Asked Questions</h1>
+            <h1 class="faqs-heading">FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="faqs-search">
+                <span class="faqs-search-icon">&#128269;</span>
+                <input type="text" placeholder="Ask anything" class="faqs-search-input">
+            </div>
+            <p class="faqs-browse-label">OR BROWSE FAQs</p>
             <div class="faqs-grid">
                 <div class="faq-item">
                     <h4>What is life coaching and how can it help me?</h4>
@@ -156,14 +178,18 @@
         <div class="about-background">
             <img src="assets/maggie-3.webp" alt="About Background">
         </div>
+        <div class="about-overlay"></div>
         <div class="container">
             <div class="about-content">
-                <h1 class="about-heading">About Maggie</h1>
+                <div class="about-heading-group">
+                    <span class="about-label">ABOUT</span>
+                    <span class="about-name">Maggie</span>
+                </div>
                 <p class="about-text">For years, I followed the path that many of us were taught to follow — work hard, be practical, and choose stability. On paper, everything looked fine. But inside, I felt stuck, burnt out, and unsure if the life I was building was truly mine.</p>
                 <p class="about-text">Today, as a life coach, I support women who feel stuck, overwhelmed, or unsure about their next step. I provide a safe space where you can reflect, gain clarity, and move forward with intention.</p>
                 <p class="about-text">You don't have to have everything figured out. You just have to be willing to take the first step.</p>
                 <p class="about-text">And I'll be here to guide you through it.</p>
-                <button class="btn">LET'S CONNECT</button>
+                <button class="btn btn-about">LET'S CONNECT</button>
             </div>
         </div>
     </section>
@@ -173,34 +199,61 @@
         <div class="container">
             <p class="social-heading">JOIN 10K+ FOLLOWERS<br>ON INSTAGRAM</p>
             <p class="social-handle">@alignedlifewithmaggie</p>
-            <div class="carousel-placeholder">
-                <div class="carousel-item">
-                    <img src="assets/instagram-1.webp" alt="Instagram Post 1">
+            <div class="social-grid">
+                <div class="social-grid-left">
+                    <div class="social-grid-item">
+                        <img src="assets/instagram-1.webp" alt="Instagram Post 1">
+                    </div>
+                    <div class="social-grid-item">
+                        <img src="assets/instagram-2.webp" alt="Instagram Post 2">
+                    </div>
+                    <div class="social-grid-item">
+                        <img src="assets/maggie-1.webp" alt="Instagram Post 3">
+                    </div>
+                    <div class="social-grid-item">
+                        <img src="assets/maggie-4.webp" alt="Instagram Post 4">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/instagram-2.webp" alt="Instagram Post 2">
+                <div class="social-grid-center">
+                    <img src="assets/instagram-3.webp" alt="Instagram Post Featured">
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/instagram-3.webp" alt="Instagram Post 3">
+                <div class="social-grid-right">
+                    <div class="social-grid-item">
+                        <img src="assets/maggie-2.webp" alt="Instagram Post 5">
+                    </div>
+                    <div class="social-grid-item">
+                        <img src="assets/maggie-3.webp" alt="Instagram Post 6">
+                    </div>
+                    <div class="social-grid-item">
+                        <img src="assets/instagram-2.webp" alt="Instagram Post 7">
+                    </div>
+                    <div class="social-grid-item">
+                        <img src="assets/instagram-1.webp" alt="Instagram Post 8">
+                    </div>
                 </div>
             </div>
-            <button class="btn">FOLLOW ON INSTAGRAM</button>
+            <button class="btn btn-social">FOLLOW ON INSTAGRAM</button>
         </div>
     </section>
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-hero">
+        <div class="newsletter-hero">
+            <div class="newsletter-hero-image">
                 <img src="assets/maggie-2.webp" alt="Newsletter Hero Image">
             </div>
+            <div class="newsletter-hero-phone">
+                <img src="assets/iphone-2.webp" alt="10% Off Welcome Code">
+            </div>
+        </div>
+        <div class="container">
             <div class="newsletter-content">
                 <h3 class="newsletter-label">LIFE-CHANGING CONTENT</h3>
                 <h1 class="newsletter-heading">The Newsletter</h1>
                 <p class="newsletter-text">Get insider access to powerful wisdom, tools, and real-time learning across motherhood, business, health, mindset, and relationships - for the self-lead woman ready to rise. I'll share what works and what doesn't, so you can master your inner Mean Girl and move with self-trust every day. Join now and receive a 10% off welcome code.</p>
                 <div class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" class="email-input">
-                    <button class="btn">RECEIVE 10% OFF WELCOME CODE!</button>
+                    <input type="email" placeholder="Email" class="email-input">
+                    <button class="btn btn-newsletter">RECEIVE 10% OFF WELCOME CODE!</button>
                 </div>
             </div>
         </div>
@@ -210,7 +263,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column footer-col-1">
+                <div class="footer-left">
                     <div class="footer-logo">
                         <img src="assets/maggie-logo-white.webp" alt="Footer Logo">
                     </div>
@@ -227,15 +280,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="footer-column footer-col-2"></div>
-                <div class="footer-column footer-col-3"></div>
-                <div class="footer-column footer-col-4">
+                <div class="footer-right">
                     <ul class="footer-menu">
+                        <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#book">Services</a></li>
+                        <li><a href="#book">Book</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#bookacall" class="btn-nav">BOOK A CALL</a></li>
                     </ul>
+                    <a href="#bookacall" class="btn btn-footer">BOOK A CALL</a>
                 </div>
             </div>
             <div class="footer-bottom">
