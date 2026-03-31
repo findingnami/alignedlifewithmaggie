@@ -910,3 +910,73 @@ h2 {
     font-weight: 300;
     color: #c4b5b5;
 }
+
+/* =============================================
+   MOBILE
+   ============================================= */
+
+/* Hamburger button - hidden on desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 101;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #454545;
+    transition: all 0.3s ease;
+}
+
+/* Animate to X when open */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 80px 40px;
+        background-color: #fff;
+        box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 30px;
+    }
+
+    .navigation ul.open {
+        right: 0;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}   
+
